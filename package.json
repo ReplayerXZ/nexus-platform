@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "node-pg-migrate": "^7.9.1"
+  }
+}
