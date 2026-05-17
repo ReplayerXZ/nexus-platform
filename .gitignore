@@ -1,0 +1,28 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+vendor/
+
+# Build
+dist/
+build/
+*.exe
+*.bin
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+.idea/
+.vscode/settings.json
+
+# Docker
+*.tar
