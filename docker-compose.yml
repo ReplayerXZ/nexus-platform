@@ -131,6 +131,20 @@ services:
       retries: 5
     restart: unless-stopped
 
+# ================================
+  # WORKER SERVICE
+  # ================================
+  worker-service:
+    build: ./services/worker-service
+    container_name: nexus-worker
+    env_file:
+      - .env
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
 
   # ================================
   # POSTGRESQL
